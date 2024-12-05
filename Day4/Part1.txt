@@ -1,0 +1,82 @@
+using System.Drawing;
+using System.Runtime.CompilerServices;
+
+var input = File.ReadAllText("input.txt");
+var grid = new Grid(input.Split('\n'));
+
+var foundWords = 0;
+for (var y = 0; y < grid.RowCount; y++)
+{
+    for (var x = 0; x < grid.ColCount; x++)
+        foundWords += grid.MatchCount(x, y);
+}
+
+Console.WriteLine(foundWords);
+
+class Grid
+{
+    private List<string> rows;
+    public int RowCount => rows.Count();
+    public int ColCount => rows[0].Count();
+
+    public Grid(string[] input)
+    {
+        rows = input.ToList();
+    }
+
+    public int MatchCount(int x, int y)
+    {
+        var wordToMatch = "XMAS";
+        if (rows[y][x] != 'X')
+            return 0;
+        var cnt = 0;
+
+        if (checkMatchDirection(wordToMatch, x, y, -1, 0))
+            cnt++;
+        if (checkMatchDirection(wordToMatch, x, y, 1, 0))
+            cnt++;
+        
+        if (checkMatchDirection(wordToMatch, x, y, 0, -1))
+            cnt++;
+        if (checkMatchDirection(wordToMatch, x, y, 0, 1))
+            cnt++;
+        
+        if (checkMatchDirection(wordToMatch, x, y, -1, -1))
+            cnt++;
+        if (checkMatchDirection(wordToMatch,x, y, 1, 1))
+            cnt++;
+        
+        if (checkMatchDirection(wordToMatch, x, y, -1, 1))
+            cnt++;
+        if (checkMatchDirection(wordToMatch,x, y, 1, -1))
+            cnt++;
+        return cnt;
+    }
+
+    private bool checkMatchDirection(string word, int x, int y, int xVelocity, int yVelocity,int index=0)
+    {
+        var matches = 0;
+        while (true)
+        {
+            if (word[index] == rows[y][x])
+            {
+                index++;
+                y += yVelocity;
+                x += xVelocity;
+                if (index == word.Length)
+                    return true;
+                if (!isValidXY(x, y))
+                    return false;
+            }
+            else return false;
+        }
+    }
+    
+    
+    private bool isValidXY(int x, int y)
+    {
+        return 
+            (x>= 0 && x< ColCount) &&
+            (y>=0 && y<RowCount);
+    }
+}
