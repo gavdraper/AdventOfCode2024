@@ -13,10 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80cd3d10-c2c0-47e3-9511-b6206cb4af28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Day6/Input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode2024.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode2024.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdventOfCode2024.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode2024.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,10 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c15184cdf8254e74a8a6ee96bd1b8738d82000/32/9ae122bb/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6780d13016c376c4491c5618b257d84da7eacf747ed2719783e775546b79b/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ffc196dcaa72b99bef7ac446415884fe13cbff486fc89fe87d78638ac873/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Day1/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -57,6 +59,7 @@
     ".NET Project.Day5.executor": "Run",
     ".NET Project.Day6.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.3172043",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -184,7 +187,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733134527443</updated>
-      <workItem from="1733134528799" duration="21604000" />
+      <workItem from="1733134528799" duration="26875000" />
     </task>
     <servers />
   </component>
@@ -211,6 +214,19 @@
           </properties>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Day6/Program.cs</url>
+          <line>53</line>
+          <properties documentPath="$PROJECT_DIR$/Day6/Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="2073" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2116" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -220,6 +236,8 @@
         <watch expression="direction" language="C#" />
         <watch expression="i" language="C#" />
         <watch expression="lines[currentLocation.Y][currentLocation.X]" language="C#" />
+        <watch expression="lines[currentLocation.Y][currentLocation.X]" language="C#" />
+        <watch expression="lines[6][4]" language="C#" />
       </configuration>
     </watches-manager>
   </component>
