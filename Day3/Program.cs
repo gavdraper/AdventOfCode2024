@@ -13,4 +13,4 @@ while (currentInstruction != null)
     currentInstruction = parser.ReadInstruction();
 }
 
-Console.WriteLine(Instructions.Select(x=>x.Result).Sum());
+Console.WriteLine(Instructions.Select(x => x.Result).Sum());

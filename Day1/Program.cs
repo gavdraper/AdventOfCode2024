@@ -31,7 +31,7 @@ Console.WriteLine(partTwoList.Sum());
 
 Console.WriteLine("----------------");
 Console.WriteLine("Test Pass/Fail");
-if(delta == 3569916 && partTwoList.Sum() == 26407426)
+if (delta == 3569916 && partTwoList.Sum() == 26407426)
     Console.WriteLine("Pass");
 else Console.WriteLine("Fail");
 

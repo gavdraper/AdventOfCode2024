@@ -1,17 +1,16 @@
 ﻿using System.Drawing;
-using System.Runtime.CompilerServices;
 
 var input = File.ReadAllText("input.txt");
 var lines = input.Split('\n').Select(x => x.ToCharArray()).ToList();
 var walkedPositions = new List<Point>();
 var positions = new Dictionary<string, int>();
 
-var directions = new List<Direction>()
+var directions = new List<Direction>
 {
     new() { Character = '^', NextCharacter = '>', Velocity = new Point(0, -1) },
     new() { Character = '>', NextCharacter = 'v', Velocity = new Point(1, 0) },
     new() { Character = 'v', NextCharacter = '<', Velocity = new Point(0, 1) },
-    new() { Character = '<', NextCharacter = '^', Velocity = new Point(-1, 0) },
+    new() { Character = '<', NextCharacter = '^', Velocity = new Point(-1, 0) }
 };
 
 var currentLocation = FindGuard();
@@ -25,8 +24,8 @@ while (InBounds(currentLocation))
     currentLocation = nextLocation.Location;
     if (!InBounds(currentLocation))
         break;
-    if(!walkedPositions.Any(x=>x.X == currentLocation.X && x.Y == currentLocation.Y))
-    walkedPositions.Add(currentLocation);
+    if (!walkedPositions.Any(x => x.X == currentLocation.X && x.Y == currentLocation.Y))
+        walkedPositions.Add(currentLocation);
     lines[currentLocation.Y][currentLocation.X] = nextLocation.Facing;
 }
 
@@ -47,11 +46,14 @@ for (var i = 0; i < walkedPositions.Count; i++)
         currentLocation = nextLocation.Location;
         if (!InBounds(currentLocation))
             break;
-        if (partTwoWalkedPositions.Any(x => x.Location.X == currentLocation.X && x.Location.Y == currentLocation.Y && x.Facing == nextLocation.Facing))
+        if (partTwoWalkedPositions.Any(x =>
+                x.Location.X == currentLocation.X && x.Location.Y == currentLocation.Y &&
+                x.Facing == nextLocation.Facing))
         {
             timeWarpOptions++;
             break;
         }
+
         partTwoWalkedPositions.Add(nextLocation);
         lines[currentLocation.Y][currentLocation.X] = nextLocation.Facing;
     }
@@ -63,15 +65,15 @@ Console.ReadLine();
 
 LocationDirection GetNextLocation(Point currentLocation)
 {
-    var facing = directions.Single(x=> x.Character == lines[currentLocation.Y][currentLocation.X]);
+    var facing = directions.Single(x => x.Character == lines[currentLocation.Y][currentLocation.X]);
     while (true)
     {
         var potentialMove = new Point(currentLocation.X + facing.Velocity.X, currentLocation.Y + facing.Velocity.Y);
         if (!InBounds(potentialMove))
-            return new LocationDirection() { Location = potentialMove, Facing = facing.Character };
+            return new LocationDirection { Location = potentialMove, Facing = facing.Character };
         if (lines[potentialMove.Y][potentialMove.X] == '#')
-            facing = directions.Single(x=> x.Character == facing.NextCharacter);
-        else  return new LocationDirection() { Location = potentialMove, Facing = facing.Character };
+            facing = directions.Single(x => x.Character == facing.NextCharacter);
+        else return new LocationDirection { Location = potentialMove, Facing = facing.Character };
     }
 }
 
@@ -81,22 +83,17 @@ Point FindGuard()
     {
         var y = i;
         for (var x = 0; x < lines[i].Count(); x++)
-        {
-            if (lines[i][x] == '^' || lines[i][x] == 'v' || lines[i][x] == '<' | lines[i][x] == '>')
-            {
+            if (lines[i][x] == '^' || lines[i][x] == 'v' || (lines[i][x] == '<') | (lines[i][x] == '>'))
                 return new Point(x, y);
-            }
-        }
     }
+
     return new Point(-1, -1);
 }
 
 bool InBounds(Point location)
 {
-    return (
-        (location.X >= 0 && location.X < lines[0].Length) &&
-        (location.Y >= 0 && location.Y < lines.Count())
-    );
+    return location.X >= 0 && location.X < lines[0].Length &&
+           location.Y >= 0 && location.Y < lines.Count();
 }
 
 public class Direction

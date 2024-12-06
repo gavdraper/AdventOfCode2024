@@ -14,10 +14,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80cd3d10-c2c0-47e3-9511-b6206cb4af28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Day7/Input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day7/Sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode2024.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode2024.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AocBase/Day.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AocBase/Day.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day2/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Day3.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/Day3.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/InstructionCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/InstructionCalculator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/MemoryParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/MemoryParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Day4.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day4/Day4.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day4/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Day5.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day5/Day5.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Part1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day5/Part1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day5/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/Day6.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/Day6.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day6/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/Day7.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/Day7.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/Input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/Input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +40,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DpaMonitoringSettings">
-    <option name="autoShow" value="false" />
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,9 +58,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ffc196dcaa72b99bef7ac446415884fe13cbff486fc89fe87d78638ac873/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Day1/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2pelffhuNDKTRtqIyzuQqhUNkjA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -60,18 +75,22 @@
     ".NET Project.Day4.executor": "Run",
     ".NET Project.Day5.executor": "Run",
     ".NET Project.Day6.executor": "Run",
+    ".NET Project.Day7.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "XThreadsFramesViewSplitterKey": "0.3172043",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.Day6">
+  <component name="RunManager" selected=".NET Project.Day7">
     <configuration name="AdventOfCode2024" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -208,6 +227,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733134527443</updated>
       <workItem from="1733134528799" duration="28528000" />
+      <workItem from="1733509941389" duration="3352000" />
     </task>
     <servers />
   </component>
@@ -226,13 +246,26 @@
           <line>63</line>
           <properties documentPath="$PROJECT_DIR$/Day2/Program.cs" containingFunctionPresentation="Method 'CalculateStatus'">
             <startOffsets>
-              <option value="1762" />
+              <option value="1763" />
             </startOffsets>
             <endOffsets>
-              <option value="1780" />
+              <option value="1781" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AocBase/Day.cs</url>
+          <line>54</line>
+          <properties documentPath="C:\Users\gavd8\OneDrive\Documents\GitHub\AdventOfCode2024\AocBase\Day.cs" containingFunctionPresentation="Method 'Solve'">
+            <startOffsets>
+              <option value="1999" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2112" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

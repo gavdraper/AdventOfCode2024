@@ -8,7 +8,7 @@ Console.WriteLine(reports.Count(x => x.Status == "safe"));
 
 Console.WriteLine("----------------");
 Console.WriteLine("Test Pass/Fail");
-if(reports.Count(x => x.Status == "safe") == 569)
+if (reports.Count(x => x.Status == "safe") == 569)
     Console.WriteLine("Pass");
 else Console.WriteLine("Fail");
 

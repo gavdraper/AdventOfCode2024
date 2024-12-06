@@ -4,6 +4,12 @@ public class MemoryParser
 {
     private string _memory;
 
+
+    public MemoryParser(string memory)
+    {
+        _memory = memory;
+    }
+
     private bool IsValidInstruction(string? instruction)
     {
         if (!instruction.Contains(","))
@@ -12,10 +18,8 @@ public class MemoryParser
         if (inputs.Count() != 2)
             return false;
         foreach (var i in inputs)
-        {
             if (!int.TryParse(i, out _))
                 return false;
-        }
         return true;
     }
 
@@ -31,7 +35,7 @@ public class MemoryParser
                 enabled = true;
             if (dontInstruction < potentialStart && dontInstruction > -1)
                 enabled = false;
-            
+
             if (potentialStart == -1)
                 return null;
             _memory = _memory.Substring(potentialStart + 4);
@@ -40,18 +44,13 @@ public class MemoryParser
                 return null;
 
             var potentialInstruction = _memory[..potentialInstructionEnd];
-            if (!IsValidInstruction(potentialInstruction )|| !enabled)
+            if (!IsValidInstruction(potentialInstruction) || !enabled)
             {
                 _memory = _memory.Substring(1);
                 continue;
             }
+
             return potentialInstruction;
         }
-    }
-
-
-    public MemoryParser(string memory)
-    {
-        _memory = memory;
     }
 }
