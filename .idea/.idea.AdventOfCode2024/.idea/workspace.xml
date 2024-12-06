@@ -7,14 +7,16 @@
     <projectFile>Day4/Day4.csproj</projectFile>
     <projectFile>Day5/Day5.csproj</projectFile>
     <projectFile>Day6/Day6.csproj</projectFile>
+    <projectFile>Day7/Day7.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80cd3d10-c2c0-47e3-9511-b6206cb4af28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Day7/Input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode2024.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode2024.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode2024.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode2024.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day6/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +59,7 @@
     ".NET Project.Day3.executor": "Run",
     ".NET Project.Day4.executor": "Run",
     ".NET Project.Day5.executor": "Run",
-    ".NET Project.Day6.executor": "Debug",
+    ".NET Project.Day6.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "XThreadsFramesViewSplitterKey": "0.3172043",
     "git-widget-placeholder": "main",
@@ -178,6 +180,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Day7" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Day7/Day7.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -187,7 +207,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733134527443</updated>
-      <workItem from="1733134528799" duration="26875000" />
+      <workItem from="1733134528799" duration="28528000" />
     </task>
     <servers />
   </component>
@@ -213,19 +233,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Day6/Program.cs</url>
-          <line>53</line>
-          <properties documentPath="$PROJECT_DIR$/Day6/Program.cs" containingFunctionPresentation="">
-            <startOffsets>
-              <option value="2073" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2116" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -54,15 +54,6 @@ for (var i = 0; i < walkedPositions.Count; i++)
         }
         partTwoWalkedPositions.Add(nextLocation);
         lines[currentLocation.Y][currentLocation.X] = nextLocation.Facing;
-        
-        // Console.Clear();
-        // foreach (var l in lines)
-        // {
-        //     foreach (var c in l)
-        //         Console.Write(c);
-        //     Console.Write("\n");
-        // }
-      //  Console.ReadLine();
     }
 }
 
