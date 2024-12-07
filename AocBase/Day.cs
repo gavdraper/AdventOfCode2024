@@ -24,7 +24,7 @@ public abstract class Day
     private string? PartTwoResult { get; set; }
     private string? Input { get; set; }
 
-    protected List<string>? Lines
+    protected List<string> Lines
     {
         get
         {

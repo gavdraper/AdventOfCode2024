@@ -14,25 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80cd3d10-c2c0-47e3-9511-b6206cb4af28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Day7/Sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2024/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AocBase/Day.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AocBase/Day.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day2/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day3/Day3.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/Day3.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day3/InstructionCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/InstructionCalculator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day3/MemoryParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/MemoryParser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day3/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day4/Day4.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day4/Day4.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day4/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day4/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/Day5.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day5/Day5.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/Part1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day5/Part1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day5/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day6/Day6.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/Day6.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day6/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day7/Day7.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/Day7.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day7/Input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/Input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day7/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/Sample.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +64,7 @@
     ".NET Project.Day7.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "XThreadsFramesViewSplitterKey": "0.3172043",
+    "XThreadsFramesViewSplitterKey": "0.3091922",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -228,6 +214,7 @@
       <updated>1733134527443</updated>
       <workItem from="1733134528799" duration="28528000" />
       <workItem from="1733509941389" duration="3352000" />
+      <workItem from="1733548549758" duration="4582000" />
     </task>
     <servers />
   </component>
@@ -255,17 +242,17 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AocBase/Day.cs</url>
+          <url>file://$PROJECT_DIR$/Day7/Program.cs</url>
           <line>54</line>
-          <properties documentPath="C:\Users\gavd8\OneDrive\Documents\GitHub\AdventOfCode2024\AocBase\Day.cs" containingFunctionPresentation="Method 'Solve'">
+          <properties documentPath="C:\Users\gavd8\OneDrive\Documents\GitHub\AdventOfCode2024\Day7\Program.cs" containingFunctionPresentation="Method 'IsValid'">
             <startOffsets>
-              <option value="1999" />
+              <option value="2097" />
             </startOffsets>
             <endOffsets>
-              <option value="2112" />
+              <option value="2158" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
