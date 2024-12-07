@@ -42,6 +42,7 @@ public abstract class Day
     public void Solve(bool sample)
     {        
         Input = sample ? File.ReadAllText("sample.txt") : File.ReadAllText("input.txt");
+        _lines = new List<string>();
         PartOneResult = ProcessPartOne();
         PartTwoResult = ProcessPartTwo();
         Console.WriteLine("RESULTS " + (sample ? " (SAMPLE)":""));

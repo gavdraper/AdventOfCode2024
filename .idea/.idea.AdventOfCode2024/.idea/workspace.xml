@@ -16,9 +16,7 @@
     <list default="true" id="80cd3d10-c2c0-47e3-9511-b6206cb4af28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2024/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AocBase/Day.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AocBase/Day.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day7/Input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/Input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day7/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day7/Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/Sample.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
     ".NET Project.Day4.executor": "Run",
     ".NET Project.Day5.executor": "Run",
     ".NET Project.Day6.executor": "Run",
-    ".NET Project.Day7.executor": "Debug",
+    ".NET Project.Day7.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "XThreadsFramesViewSplitterKey": "0.3091922",
@@ -214,7 +212,7 @@
       <updated>1733134527443</updated>
       <workItem from="1733134528799" duration="28528000" />
       <workItem from="1733509941389" duration="3352000" />
-      <workItem from="1733548549758" duration="4582000" />
+      <workItem from="1733548549758" duration="5222000" />
     </task>
     <servers />
   </component>
@@ -243,16 +241,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Day7/Program.cs</url>
-          <line>54</line>
+          <line>44</line>
           <properties documentPath="C:\Users\gavd8\OneDrive\Documents\GitHub\AdventOfCode2024\Day7\Program.cs" containingFunctionPresentation="Method 'IsValid'">
             <startOffsets>
-              <option value="2097" />
+              <option value="1343" />
             </startOffsets>
             <endOffsets>
-              <option value="2158" />
+              <option value="1376" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

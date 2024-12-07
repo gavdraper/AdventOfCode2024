@@ -1,9 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using AocBase;
 
-using AocBase;
-
-var day = new Day7("3749","11387","5512534574980","");
+var day = new Day7("3749","11387","5512534574980","328790210468594");
 day.Solve(true);
+day.Solve(false);
 
 public class Day7 : Day
 {
@@ -22,65 +21,7 @@ public class Day7 : Day
         }
         return result.ToString();
     }
-
-    private bool IsValid(Calibration calibration, bool combine = false)
-    {
-        Stack<Calibration> ItemsToCheck = new Stack<Calibration>();
-        calibration.Aggregation = calibration.Denominators[0];
-        calibration.Index = 1;
-        ItemsToCheck.Push(calibration);
-        while (ItemsToCheck.Count > 0)
-        { 
-            calibration = ItemsToCheck.Pop();
-            if (calibration.Index == calibration.Denominators.Count() && calibration.Result == calibration.Aggregation)
-                return true;
-            if (calibration.Index < calibration.Denominators.Count())
-            {
-                ItemsToCheck.Push(new Calibration()
-                {
-                    Index = calibration.Index+1, 
-                    Denominators = calibration.Denominators,
-                    Result = calibration.Result,
-                    Aggregation = calibration.Aggregation+ calibration.Denominators[calibration.Index]
-                });
-                ItemsToCheck.Push(new Calibration()
-                {
-                    Index = calibration.Index+1, 
-                    Denominators = calibration.Denominators,
-                    Result = calibration.Result,
-                    Aggregation = calibration.Aggregation * calibration.Denominators[calibration.Index]
-                });
-                // if (combine)
-                // {
-                //     if (calibration.Denominators.Count() > calibration.Index + 1)
-                //     {
-                //         ItemsToCheck.Push(new Calibration()
-                //         {
-                //             Index = calibration.Index + 2,
-                //             Denominators = calibration.Denominators,
-                //             Result = calibration.Result,
-                //             Aggregation = calibration.Aggregation +
-                //                           long.Parse((calibration.Denominators[calibration.Index + 1].ToString() +
-                //                                       calibration.Denominators[calibration.Index + 1].ToString()))
-                //         });
-                //         ItemsToCheck.Push(new Calibration()
-                //         {
-                //             Index = calibration.Index + 2,
-                //             Denominators = calibration.Denominators,
-                //             Result = calibration.Result,
-                //             Aggregation = calibration.Aggregation *
-                //                           long.Parse((calibration.Denominators[calibration.Index + 1].ToString() +
-                //                                       calibration.Denominators[calibration.Index + 1].ToString()))
-                //         });
-                //     }
-                // }
-            }
-        }
-
-        return false;
-
-    }
-
+    
     protected override string ProcessPartTwo()
     {
         long result = 0;
@@ -92,6 +33,51 @@ public class Day7 : Day
         }
         return result.ToString();
     }
+
+    private bool IsValid(Calibration calibration, bool combine = false)
+    {
+        Stack<Calibration> ItemsToCheck = new Stack<Calibration>();
+         calibration.Aggregation = calibration.Denominators[0];
+        // calibration.Index = 1;
+        ItemsToCheck.Push(calibration);
+        while (ItemsToCheck.Count > 0)
+        { 
+            calibration = ItemsToCheck.Pop();
+            
+            if (calibration.Index == calibration.Denominators.Count()-1 && calibration.Result == calibration.Aggregation)
+                return true;
+            if (calibration.Index < calibration.Denominators.Count()-1)
+            {
+                ItemsToCheck.Push(new Calibration()
+                {
+                    Index = calibration.Index+1, 
+                    Denominators = calibration.Denominators,
+                    Result = calibration.Result,
+                    Aggregation = calibration.Aggregation+ calibration.Denominators[calibration.Index+1]
+                });
+                ItemsToCheck.Push(new Calibration()
+                {
+                    Index = calibration.Index+1, 
+                    Denominators = calibration.Denominators,
+                    Result = calibration.Result,
+                    Aggregation = calibration.Aggregation * calibration.Denominators[calibration.Index+1]
+                });
+                if(combine)
+                    ItemsToCheck.Push(new Calibration()
+                    {
+                        Index = calibration.Index+1, 
+                        Denominators = calibration.Denominators,
+                        Result = calibration.Result,
+                        Aggregation = long.Parse(calibration.Aggregation.ToString() + calibration.Denominators[calibration.Index+1].ToString())
+                    });
+            }
+        }
+
+        return false;
+
+    }
+
+
 }
 
 public class Calibration
